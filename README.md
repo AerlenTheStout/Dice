@@ -6,9 +6,10 @@ this project will be using tkinter to create visuals and a python script to simu
 #### Points
 - 1's are worth 100 points. 5's are worth 50
 - all the other numbers dont have any base value
+- runs can only be in the same roll, if you get '6 6' in one roll and a '6' in the next that is not a run
 - if you get a run of 3 ones '1 1 1' that is 1000 points
 - if you get a run of 3 '4 4 4' that would be 400 points. 
-- if you get a run of 4 it is the run of 3 times 2 '4 4 4 4' would be 400 x 2 = 800 points
+- if you get a run of 4 it is the run of 3 multiplied by 2 '4 4 4 4' would be 400 x 2 = 800 points
 - if you get a run of 5 '4 4 4 4 4' it is 1000 points no matter what.
 
 #### Gameplay
