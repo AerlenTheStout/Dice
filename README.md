@@ -5,8 +5,11 @@ this project will be using tkinter to create visuals and a python script to simu
 
 #### Points
 - 1's are worth 100 points. 5's are worth 50
-- all the other numbers dont have any base value but if you get a run (3, 4, 5 in a row of the same number)
-- it is worth (Jack has not gotten back to me) ecept 1 if you get three 1's it is 1000 points
+- all the other numbers dont have any base value
+- if you get a run of 3 ones '1 1 1' that is 1000 points
+- if you get a run of 3 '4 4 4' that would be 400 points. 
+- if you get a run of 4 it is the run of 3 times 2 '4 4 4 4' would be 400 x 2 = 800 points
+- if you get a run of 5 '4 4 4 4 4' it is 1000 points no matter what.
 
 #### Gameplay
 - there are five dice that you roll,
