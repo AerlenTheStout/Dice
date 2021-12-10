@@ -1,5 +1,6 @@
 # Dice
 ## This project is meant to replicate a dice game I played at a friends house
+this project will be using tkinter to create visuals and a python script to simulate the dice game
 ### The game is a dice game for any ages, any people, any groups and as many people as wanted
 
 #### Points
