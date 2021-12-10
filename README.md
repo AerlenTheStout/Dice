@@ -1,9 +1,7 @@
 # Dice
 ## This project is meant to replicate a dice game I played at a friends house
 
-- there are five dice that are be passed around as to many people as wanted
-- when it is your turn you get the five dice
-- you roll them,
+- there are five dice that are be passed around as to many people as wanted when it is your turn you get the five dice you roll them,
 
 #### Points
 - 1's are worth 100 points. 5's are worth 50
