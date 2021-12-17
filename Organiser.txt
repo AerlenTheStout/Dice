@@ -1,0 +1,8 @@
+mainmenu
+    StartButton
+        Clears all other buttons,lables and images Starts the game
+    instructionsbutton
+        Clears  all other buttons,lables and images and displays the instructions
+    QuitButton
+        crashes the window
+
