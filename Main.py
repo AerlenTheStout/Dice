@@ -3,6 +3,7 @@ import tkinter as TK
 global root
 root = TK.Tk()
 
+
 def ChangeScreen(window):
     for widgets in root.winfo_children():
       widgets.destroy()
@@ -19,7 +20,7 @@ def MainMenu(root):
     root.configure(background="grey")
     
     # make title label
-    Title = TK.Label(root, text="Dice", font=("Helvetica", 20), bg="grey")
+    Title = TK.Label(root, text="Dice", font=("Helvetica", 20), bg="grey",padx=50)
 
     #init buttons
     MainMenu.StartButton = TK.Button(root, text="Start", command=lambda: ChangeScreen(window = "Start"))
@@ -38,8 +39,12 @@ def Start(root):
 
 
 def Instruction(root):
+    #TODO : import instructions file and display it
     
-    InstructionBox = TK.Message(root, text = "Instructions: \n\n")
+    f = open("README.md", "r")
+    instructiontxt = f.read()
+    
+    InstructionBox = TK.Message(root, text = instructiontxt, width = 500, bg="white",pady=50,padx=50)
     BackButton = TK.Button(root,text="MainMenu", command=lambda:ChangeScreen(window = "MainMenu"))
     
     InstructionBox.grid(row = 2, column = 5)
