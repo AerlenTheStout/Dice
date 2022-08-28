@@ -3,6 +3,13 @@ import tkinter as TK
 global root
 root = TK.Tk()
 
+#TODO change to change dice rolling lable changer 
+def changeWaterLabel(*args):
+    ST.WaterLabel.config(text='') # clear label
+    ST.WaterLabel.config(text= "Water = " + ST.numOfWaterEntry.get()) # set new label text
+
+def rollDice():
+    
 
 def ChangeScreen(window):
     for widgets in root.winfo_children():
@@ -33,12 +40,7 @@ def MainMenu(root):
     MainMenu.InstructionsButton.grid(row=3, column=5)
     MainMenu.QuitButton.grid(row=4, column=5)
     
-
-def Start(root):
-    print("StartRoll")
-
-
-def Instruction(root):
+    def Instruction(root):
     #TODO : import instructions file and display it
     
     f = open("README.md", "r")
@@ -50,6 +52,18 @@ def Instruction(root):
     InstructionBox.grid(row = 2, column = 5)
     BackButton.grid(row = 3, column=5)
 
+def Start(root):
+    print("StartRoll")
+
+    BackButton = TK.Button(root,text="MainMenu", command=lambda:ChangeScreen(window = "MainMenu"))
+    BackButton.grid(row = 3, column=5)
+
+    #create dice
+    Dice1 = TK.Label(root, text="Dice1", bg="white", padx=50)
+    Dice2 = TK.Label(root, text="Dice2", bg="white", padx=50)
+    Dice3 = TK.Label(root, text="Dice3", bg="white", padx=50)
+    Dice4 = TK.Label(root, text="Dice4", bg="white", padx=50)
+    Dice5 = TK.Label(root, text="Dice5", bg="white", padx=50)
 
 
 MainMenu(root)
